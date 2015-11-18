@@ -1,0 +1,29 @@
+{
+    "name": "acb-gimepix-placeholder",
+    "title": "ACB GIMEpix Placeholder",
+    "description": "Generate placeholder Images from gimepix.com. More than 14.000 Hi-res public images in 47 categories for your projects.",
+    "homepage": "https://github.com/acbarbosa1964/acb-gimepix-placeholder",
+    "version": "1.0.0",
+    "author": "Antonio Carlos Barbosa <acbarbosa@gmail.com> (http://cursosgratuitos.goodlearn.org/)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.32.0"
+    },
+    "keywords": [
+        "generate",
+        "images",
+        "placeholder",
+        "lorem",
+        "pixel",
+        "lorem",
+        'gimepix"
+        "public",
+        "picker",
+        "popup",
+        "dummy",
+        "sample",
+        "developer",
+        "gallery",
+        "slideshow"
+    ]
+}
