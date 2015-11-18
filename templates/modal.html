@@ -1,0 +1,99 @@
+<div class="ext_acb-gimepix modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">GIMEpix - Free images for your project</h1>
+        <button class="dialog-button btn primary close-button" data-button-id="ok">X</button>
+    </div>
+    <div class="modal-body">
+        <div class="optionsview">
+            <div>
+                <span class="grid-left">Width</span>
+                <input type="range" min="1" max="1920" data-bind="value: width, click: onPreview">
+                <input class="size" data-bind="value: width, click: onPreview" />
+            </div>
+            <div>
+                <span class="grid-left">Height</span>
+                <input type="range" name="points" min="1" max="1080" data-bind="value: height, click: onPreview">
+                <input class="size" data-bind="value: height, click: onPreview" />
+            </div>
+            <div>
+                <span class="grid-left">Theme</span>
+                <select class="theme" data-bind="value: theme, click: onPreview">
+                    <option value="abstract">Abstract</option>
+                    <option value="animals">Animals</option>
+                    <option value="anime">Anime</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="beach">Beach</option>
+                    <option value="bikes">Bikes</option>
+                    <option value="blurtec">Blurtec</option>
+                    <option value="brands">Brands</option>
+                    <option value="business">Business</option>
+                    <option value="cars">Cars</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="design">Design</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="fauna">Fauna</option>
+                    <option value="flora">Flora</option>
+                    <option value="food">Food</option>
+                    <option value="games">Games</option>
+                    <option value="graphics">Graphics</option>
+                    <option value="hdr">HDR</option>
+                    <option value="interiors">Interiors</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="love">Love</option>
+                    <option value="lowlight">LowLight</option>
+                    <option value="miscellaneous">Miscellaneous</option>
+                    <option value="movies">Movies</option>
+                    <option value="nature">Nature</option>
+                    <option value="newborn">NewBorn</option>
+                    <option value="newyear">NewYear</option>
+                    <option value="nude">Nude</option>
+                    <option value="people">People</option>
+                    <option value="planes">Planes</option>
+                    <option value="products">Products</option>
+                    <option value="sports">Sports</option>
+                    <option value="still">Still</option>
+                    <option value="street">Street</option>
+                    <option value="technology">Technology</option>
+                    <option value="textures">Textures</option>
+                    <option value="transport">Transport</option>
+                    <option value="travel">Travel</option>
+                    <option value="unsplash">Unsplash</option>
+                    <option value="urban">Urban</option>
+                    <option value="wallpaper">Wallpaper</option>
+                </select>
+            </div>
+            <div class="radiosel">
+                <span class="grid-left">Select as:</span>
+                <span><input type="radio" value="html" data-bind="checked: choosenType" /><span class="choices">Html</span></span>
+                <span><input type="radio" value="background" data-bind="checked: choosenType" /><span class="choices">Background</span></span>
+                <span><input type="radio" value="url" data-bind="checked: choosenType" /><span class="choices">URL</span></span>
+            </div>
+
+        </div>
+
+        <div id="owl" class="gallery owl-theme" data-bind="value: image, click: onLinkClick ">
+        </div>
+        <div class="selected">
+            <div id='sele' class="col">
+                <p id="p1"></p>
+            </div>
+        </div>
+
+        <dib class="btnview">
+            <button class="btn btnsel" data-bind="click: onUrlInsert">Insert Image</button>
+        </dib>
+
+
+        <div class="urlview">
+            <span class="grid-left">Url</span>
+            <input class="url" data-bind="value: url, click: select" readonly="readonly" />
+        </div>
+
+        <div class="modal-footer">
+            <button class="dialog-button btn" data-bind="click: onClose">Close</button>
+        </div>
+        <p class="text-center">
+            All images are from <a href="http://gimepix.com">GIMEpix.com</a>
+        </p>
+    </div>
